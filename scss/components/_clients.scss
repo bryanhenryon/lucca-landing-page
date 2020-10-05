@@ -1,0 +1,40 @@
+.clients {
+  color: #f60;
+  padding: 100px 0;
+  text-align: center;
+
+  h3 {
+    font-size: 3.2rem;
+    font-weight: 300;
+    margin-bottom: 10px;
+
+    a {
+      font-weight: bold;
+    }
+  }
+
+  p {
+    color: #999;
+    font-size: 1.6rem;
+    margin-bottom: 50px;
+  }
+
+  &__list {
+    max-width: 1200px;
+    margin: 0 auto;
+    a {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      img {
+        width: 120px;
+        height: 120px;
+        margin: 0 30px;
+      }
+    }
+  }
+
+  @media (max-width: 650px) {
+    display: none;
+  }
+}

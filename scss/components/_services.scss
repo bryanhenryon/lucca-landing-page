@@ -1,0 +1,313 @@
+.services {
+  padding: 40px 0 80px 0;
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+    max-width: 500px;
+    margin: auto;
+    padding: 120px 0 120px 0;
+    font-weight: 300;
+
+    @media (max-width: 640px) {
+      padding: 50px 0 75px 0;
+    }
+  }
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: 1px 1px 60px rgba(0, 0, 0, 0.2);
+
+    .grid__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      border: 1px solid #f1f1f1;
+      padding: 20px 10px 50px 10px;
+      justify-content: center;
+      font-size: 1.3rem;
+      transition: 0.2s ease-in-out;
+      height: 100%;
+
+      span {
+        background: #f1f1f1;
+        color: #929292;
+        border-radius: 100px;
+        padding: 5px 10px;
+        transition: 0.2s ease-in-out;
+      }
+      img {
+        width: 60px;
+        height: 60px;
+        margin: 20px 0;
+      }
+
+      p {
+        font-size: 1.55rem;
+        margin-top: 2px;
+      }
+
+      &.figgo {
+        h3 {
+          color: #7072d2;
+        }
+
+        img {
+          border: 1px solid rgba($color: #f1f1f1, $alpha: 0.5);
+          border-radius: 50px;
+        }
+
+        &:hover {
+          background: #7072d2;
+          border: 1px solid #7072d2;
+
+          span {
+            background: rgba($color: #f1f1f1, $alpha: 0.1);
+          }
+          h3,
+          span,
+          p {
+            color: #fff;
+          }
+        }
+      }
+
+      &.timmi-t {
+        h3 {
+          color: #12cca7;
+        }
+
+        img {
+          border: 1px solid rgba($color: #f1f1f1, $alpha: 0.5);
+          border-radius: 50px;
+        }
+
+        &:hover {
+          background: #12cca7;
+          border: 1px solid #12cca7;
+
+          span {
+            background: rgba($color: #f1f1f1, $alpha: 0.3);
+          }
+          h3,
+          span,
+          p {
+            color: #fff;
+          }
+        }
+      }
+
+      &.timmi-project {
+        h3 {
+          color: #8349bf;
+        }
+
+        img {
+          border: 1px solid rgba($color: #f1f1f1, $alpha: 0.5);
+          border-radius: 50px;
+        }
+
+        &:hover {
+          background: #77458f;
+          border: 1px solid #77458f;
+
+          span {
+            background: rgba($color: #f1f1f1, $alpha: 0.1);
+          }
+          h3,
+          span,
+          p {
+            color: #fff;
+          }
+        }
+      }
+
+      &.cleemy {
+        h3 {
+          color: #5fc871;
+        }
+
+        img {
+          border: 1px solid rgba($color: #f1f1f1, $alpha: 0.5);
+          border-radius: 50px;
+        }
+
+        &:hover {
+          background: #5fc871;
+          border: 1px solid #5fc871;
+
+          span {
+            background: rgba($color: #f1f1f1, $alpha: 0.2);
+          }
+          h3,
+          span,
+          p {
+            color: #fff;
+          }
+        }
+      }
+
+      &.poplee-core {
+        h3 {
+          color: #0c88ef;
+        }
+
+        img {
+          border: 1px solid rgba($color: #f1f1f1, $alpha: 0.5);
+          border-radius: 50px;
+        }
+
+        &:hover {
+          background: #0c88ef;
+          border: 1px solid #0c88ef;
+
+          span {
+            background: rgba($color: #f1f1f1, $alpha: 0.3);
+          }
+          h3,
+          span,
+          p {
+            color: #fff;
+          }
+        }
+      }
+
+      &.poplee-interviews-objectives {
+        h3 {
+          color: #2db7d3;
+        }
+
+        img {
+          border: 1px solid rgba($color: #f1f1f1, $alpha: 0.5);
+          border-radius: 50px;
+        }
+
+        &:hover {
+          background: #2db7d3;
+          border: 1px solid #2db7d3;
+
+          span {
+            background: rgba($color: #f1f1f1, $alpha: 0.3);
+          }
+          h3,
+          span,
+          p {
+            color: #fff;
+          }
+        }
+      }
+
+      &.poplee-payment {
+        h3 {
+          color: #345be5;
+        }
+
+        img {
+          border: 1px solid rgba($color: #f1f1f1, $alpha: 0.5);
+          border-radius: 50px;
+        }
+
+        &:hover {
+          background: #345be5;
+          border: 1px solid #345be5;
+
+          span {
+            background: rgba($color: #f1f1f1, $alpha: 0.3);
+          }
+          h3,
+          span,
+          p {
+            color: #fff;
+          }
+        }
+      }
+
+      &.pagga {
+        h3 {
+          color: #ffb900;
+        }
+
+        img {
+          border: 1px solid rgba($color: #f1f1f1, $alpha: 0.5);
+          border-radius: 50px;
+        }
+
+        &:hover {
+          background: #ffb900;
+          border: 1px solid #ffb900;
+
+          span {
+            background: rgba($color: #f1f1f1, $alpha: 0.3);
+          }
+          h3,
+          span,
+          p {
+            color: #fff;
+          }
+        }
+      }
+      &.essential-sirh {
+        border: 1px solid #3c7de1;
+        background: linear-gradient(
+          137deg,
+          #2db7d3 0,
+          #0c88ef 50%,
+          #7072d2 100%
+        );
+        color: #fff;
+
+        span {
+          background: #ffb900;
+          text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+          color: #fff;
+        }
+
+        &:hover {
+          span {
+            background: rgba($color: #f1f1f1, $alpha: 0.3);
+          }
+          img {
+            border: 1px solid rgba($color: #f1f1f1, $alpha: 0.5);
+            border-radius: 50px;
+          }
+        }
+      }
+
+      &.lucca-for-payment {
+        background: linear-gradient(137deg, #f60 0, #ffb900 100%);
+        border: 1px solid #f60;
+        color: #fff;
+
+        span {
+          background: #ffb900;
+          text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+          color: #fff;
+        }
+
+        &:hover {
+          span {
+            background: rgba($color: #f1f1f1, $alpha: 0.2);
+          }
+          img {
+            border: 1px solid rgba($color: #f1f1f1, $alpha: 0.2);
+            border-radius: 50px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .services-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  @media (max-width: 900px) {
+    .services-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}

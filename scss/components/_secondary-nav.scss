@@ -1,0 +1,93 @@
+.secondary-nav-container {
+  position: fixed;
+  top: -50px;
+  width: 100%;
+  height: 40px;
+  background-color: #233867;
+  transition: 0.2s;
+  z-index: 100;
+  &.visible {
+    top: 0;
+  }
+  .secondary-nav {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 960px;
+    color: #fff;
+    height: 100%;
+
+    .lang-select {
+      display: flex;
+      align-items: center;
+      font-size: 1.6rem;
+      cursor: pointer;
+
+      &__selected-lang-img {
+        width: 20px;
+      }
+
+      &__selected-lang {
+        padding: 0 8px;
+      }
+
+      &__select-lang-arrow {
+        font-size: 1.25rem;
+        padding-top: 2px;
+      }
+    }
+
+    .commercial {
+      font-size: 1.2rem;
+      margin-left: 10px;
+      padding-left: 10px;
+      border-left: 2px solid grey;
+      color: #f4f4f4;
+      cursor: pointer;
+    }
+
+    &__right {
+      display: flex;
+      flex: 1;
+      justify-content: flex-end;
+      align-items: center;
+      list-style: none;
+      font-size: 1.4rem;
+
+      .support {
+        display: flex;
+        align-items: center;
+      }
+
+      .support > a {
+        margin: 0 10px;
+        display: flex;
+        align-items: center;
+
+        & > span {
+          padding: 0 10px;
+        }
+      }
+
+      .login > a {
+        background: #ffb900;
+        border-radius: 2px;
+        padding: 3px 10px;
+        transition: all 0.2s ease-in-out;
+      }
+
+      .login > a:hover {
+        background: #f60;
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    width: 100%;
+    padding: 0 30px;
+  }
+
+  @media (max-width: 840px) {
+    display: none;
+  }
+}

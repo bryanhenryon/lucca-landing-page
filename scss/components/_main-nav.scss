@@ -1,0 +1,160 @@
+.main-nav-container {
+  position: fixed;
+  top: 40px;
+  width: 100%;
+  height: 80px;
+  transition: 0.2s;
+  z-index: 100;
+
+  .main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    max-width: 960px;
+    margin: 0 auto;
+    margin-top: 20px;
+
+    &__logo {
+      width: 120px;
+      height: 42px;
+
+      a {
+        background: url("https://www.lucca.fr/img/sprite-logo.svg") no-repeat;
+        background-position: top center;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        display: inline-block;
+      }
+    }
+
+    &__list {
+      display: flex;
+      align-items: flex-end;
+      list-style: none;
+      color: #fff;
+      font-size: 1.4rem;
+
+      li {
+        padding-right: 15px;
+        display: flex;
+        align-items: center;
+
+        .fa-caret-down {
+          padding-left: 10px;
+
+          @media (max-width: 960px) {
+            padding-left: 2px;
+          }
+        }
+      }
+
+      .mail {
+        margin-left: 10px;
+        a {
+          height: 40px;
+          width: 40px;
+          background: url("https://www.lucca.fr/img/home/mail59.svg") no-repeat;
+          transition: transform 0.3s;
+
+          &:hover {
+            transform: scale(0.9);
+          }
+        }
+
+        @media (max-width: 960px) {
+          display: none;
+        }
+      }
+      .demo-cta {
+        background: #fff;
+        padding: 8px 13px;
+        border-radius: 5px;
+        color: #f60;
+        text-transform: uppercase;
+        font-size: 1.6rem;
+        cursor: pointer;
+        transition: 0.3s;
+        align-self: flex-start;
+        border: 2px solid transparent;
+
+        &:hover {
+          background: none;
+          border: 2px solid #fff;
+          color: #fff;
+        }
+      }
+
+      @media (max-width: 840px) {
+        display: none;
+      }
+    }
+
+    .burger {
+      a {
+        display: block;
+        background: url("https://www.lucca.fr/img/home/three.svg") no-repeat;
+        height: 32px;
+        width: 32px;
+      }
+
+      @media (min-width: 840px) {
+        display: none;
+      }
+    }
+
+    @media (max-width: 840px) {
+      margin-top: 10px;
+    }
+  }
+
+  &.moving {
+    background: #fff;
+    box-shadow: 0 1px 80px rgba(0, 0, 0, 0.2);
+    top: 0px;
+
+    .main-nav__logo {
+      a {
+        background-position: bottom center;
+      }
+    }
+
+    .main-nav__list {
+      .list__item {
+        color: #000;
+      }
+
+      .mail {
+        a {
+          background: url("https://www.lucca.fr/img/home/mail59-orange.svg")
+            no-repeat;
+        }
+      }
+
+      .demo-cta {
+        background: #ffb900;
+        border: 2px solid #ffb900;
+        color: #fff;
+
+        &:hover {
+          background: #f60;
+          color: #fff;
+        }
+      }
+    }
+    .burger {
+      a {
+        background: url("https://www.lucca.fr/img/home/three-o.svg") no-repeat;
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  @media (max-width: 840px) {
+    top: 0;
+  }
+}
